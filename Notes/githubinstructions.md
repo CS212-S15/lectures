@@ -25,3 +25,7 @@ Your repository names will use the following naming convention: `<github_usernam
 3. Choose `General->Existing Projects into Workspace`.
 4. Select the root directory as the directory created by the Github tool (e.g., `/Users/srollins/cs212/srollins-homework`).
 5. Select all of the projects you wish to import and click `Finish`.
+
+##Pulling Down New Projects
+The instructor will add new projects to your repositories as new work is assigned. In the Github tool, simply `Sync` to pull down the latest updates from github. Then, follow the steps listed in the `Loading Projects into Eclipse` section to load the projects into eclipse and begin work.
+
