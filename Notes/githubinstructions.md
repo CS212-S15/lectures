@@ -4,7 +4,9 @@ Github Instructions
 ## Table of Contents ##
 - [Setup](#setup)
 - [Initial Clone](#initial-clone)
+- [Loading Projects into Eclipse](#loading-projects-into-eclipse)
 - [Pulling Down New Projects](#pulling-down-new-projects)
+- [Submission](#submission)
 
 ##Setup
 1. Make sure you are using Eclipse Luna and that it is configured to use Java 8.
@@ -39,8 +41,9 @@ Commit your changes to Github *early and often*. You should *not* use Github as 
 
 ###Using the Github Tool
 1. On the `Changes` screen, select all of the files you wish to commit. This should *not* include classfiles or metadata, but should include any new Java files you have implemented, and any Java or other files you have changed. 
-2. In the `Summary` enter a meaningful short description of the change. Do *not* enter messages such as "commit 1", "commit 2". *DO* enter messages such as "Completed InvertedIndexBuilder parseFile". In the `Description` box provide a more detailed description of the change you have made in this version of the code. 
+2. In the `Summary` enter a short, meaningful description of the change. Do *not* enter messages such as "commit 1", "commit 2". *DO* enter messages such as "Completed InvertedIndexBuilder parseFile". In the `Description` box provide a more detailed description of the change you have made in this version of the code. 
 3. Click `Commit and Sync`. 
+4. Congratulations! Your changes should be available on Github.
 
 ###Hints
 1. Make sure your homework is submitted in the homework repository that the instructor has created and that your projects are submitted into the project repository that the instructor has created. 
@@ -49,5 +52,10 @@ Commit your changes to Github *early and often*. You should *not* use Github as 
 4. Verify that all changes have been committed as expected by using the Github website.
 
 ###Homework
-When submitting homework assignments, the version of your program that is uploaded to Github at the deadline (midnight on the day the work is due) will be graded. You may not resubmit homework assignments. 
+When submitting homework assignments, the version of your program that is uploaded to Github at the deadline (midnight on the day the work is due) will be graded. You may *not* resubmit homework assignments. 
+
+###Projects
+1. Make sure you are passing all tests as described in the [project guidelines](projectguidelines.md).
+2. Follow the instructions for [creating a new release](https://help.github.com/articles/creating-releases/) for your project. 
+3. The TA and instructor will receive an automated email noting your submission. After your [submission is verified](projectguidelines.md), you will receive an email inviting you to sign up for code review.
 
