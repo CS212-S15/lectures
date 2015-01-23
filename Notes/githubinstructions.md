@@ -41,5 +41,8 @@ Commit your changes to Github *early and often*. You should *not* use Github as 
 1. Make sure your homework is submitted in the homework repository that the instructor has created and that your projects are submitted into the project repository that the instructor has created. 
 2. Do not change the name of the Eclipse project the instructor has created for you.
 3. Make sure *all* of the files you have changed or added are included. 
+4. Verify that all changes have been committed as expected by using the Github website.
 
+###Homework
+When submitting homework assignments, the version of your program that is uploaded to Github at the deadline (midnight on the day the work is due) will be graded. You may not resubmit homework assignments. 
 
