@@ -35,5 +35,11 @@ Commit your changes to Github *early and often*. You should *not* use Github as 
 ###Using the Github Tool
 1. On the `Changes` screen, select all of the files you wish to commit. This should *not* include classfiles or metadata, but should include any new Java files you have implemented, and any Java or other files you have changed. 
 2. In the `Summary` enter a meaningful short description of the change. Do *not* enter messages such as "commit 1", "commit 2". *DO* enter messages such as "Completed InvertedIndexBuilder parseFile". In the `Description` box provide a more detailed description of the change you have made in this version of the code. 
+3. Click `Commit and Sync`. 
+
+###Hints
+1. Make sure your homework is submitted in the homework repository that the instructor has created and that your projects are submitted into the project repository that the instructor has created. 
+2. Do not change the name of the Eclipse project the instructor has created for you.
+3. Make sure *all* of the files you have changed or added are included. 
 
 
