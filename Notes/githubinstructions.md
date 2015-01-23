@@ -1,8 +1,5 @@
 Github Instructions
 ===================
-# Table of Contents
-1. [Setup](#setup)
-2. [Initial Clone](#Initial Clone)
 
 ##Setup
 1. Make sure you are using Eclipse Luna and that it is configured to use Java 8.
@@ -22,7 +19,7 @@ Your repository names will use the following naming convention: `<github_usernam
 3. Choose the appropriate repository, for example `CS212-S15/srollins-homework`, and then select the local directory where you'd like to save the data, for example `/Users/srollins/cs212`.
 4. Once you click `Clone` the data will be downloaded and you should be able to use `Finder` or `Explorer` to see it. The Github tool will show you *only* the files that have been changed locally and not pushed to Github. It will not list all files.
 
-##Loading into Eclipse
+##Loading Projects into Eclipse
 1. Open Eclipse specifying the local directory indicated in step 3 under Using the Github Tool (e.g., `/Users/srollins/cs212`).
 2. Right-click under the `Package Explorer` and select `Import`.
 3. Choose `General->Existing Projects into Workspace`.
