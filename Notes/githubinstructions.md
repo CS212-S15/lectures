@@ -1,6 +1,11 @@
 Github Instructions
 ===================
 
+## Table of Contents ##
+- [Setup](#setup)
+- [Initial Clone](#initial-clone)
+- [Pulling Down New Projects](#pulling-down-new-projects)
+
 ##Setup
 1. Make sure you are using Eclipse Luna and that it is configured to use Java 8.
   1. Download [Eclipse here](https://eclipse.org/)
