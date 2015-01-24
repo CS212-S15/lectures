@@ -1,6 +1,8 @@
 Homework Guidelines
 ===================
 
+Make sure you have done an [initial clone](githubinstructions.md#initial-clone) of your homework repository. This repository will be named using the convention `<github_username>-homework`, for example `srollins-homework`.
+
 ##Submission
 To submit your homework assignment, make sure the latest versions of *all* Java files are available on Github by the due date.
 
