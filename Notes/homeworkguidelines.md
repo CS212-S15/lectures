@@ -15,3 +15,5 @@ Once your code is up on Github, your assignment is officially submitted!
 ##Testing
 To be eligible for full credit, your homework solution must pass all of the tests provided in the repository. You *may* receive some partial credit for partially working solutions, but this applies to homework assignments only.
 
+##Grading
+Your grade will be based on (1) whether you code passes all unit tests and (2) whether your code is well designed. Your code must be demonstrate proper decomposition (into classes and methods), clear implementation, and efficiency.
