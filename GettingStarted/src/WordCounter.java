@@ -8,6 +8,11 @@
  */
 public class WordCounter {
 	
+	/**
+	 * returns number of words in file specified.
+	 * @param fileName
+	 * @return
+	 */
 	public static int countWords(String fileName) {
 		
 		return -1;
