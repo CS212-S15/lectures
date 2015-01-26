@@ -1,3 +1,7 @@
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
+import java.util.Scanner;
+
 /**
  * A class that counts the number of words that appear in a file.
  * Requirements:
@@ -14,6 +18,10 @@ public class WordCounter {
 	 * @return
 	 */
 	public static int countWords(String fileName) {
+		
+		
+		Path path = FileSystems.getDefault().getPath(fileName);		
+		Scanner fileScanner = new Scanner(path);
 		
 		return -1;
 	}
