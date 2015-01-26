@@ -34,7 +34,7 @@ Your repository names will use the following naming convention: `<github_usernam
 5. Select all of the projects you wish to import and click `Finish`.
 
 ##Pulling Down New Projects
-The instructor will add new projects to your repositories as new work is assigned. In the Github tool, simply `Sync` to pull down the latest updates from github. Then, follow the steps listed in the `Loading Projects into Eclipse` section to load the projects into eclipse and begin work.
+The instructor will add new projects to your repositories as new work is assigned. In the Github tool, simply `Sync` to pull down the latest updates from github. Then, follow the steps listed in the [Loading Projects into Eclipse](#loading-projects-into-eclipse) section to load the projects into Eclipse and begin work.
 
 ##Submission
 Commit your changes to Github *early and often*. You should *not* use Github as only a submission tool. Everytime you get a new method or feature working *commit your changes to Github*! 

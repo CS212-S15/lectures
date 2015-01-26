@@ -2,6 +2,10 @@ Project Guidelines
 ===================
 *under development*
 
+##Getting Started
+Begin work on your projects by first cloning the Github project repository that the instructor has created for you. The name of the repository will be `<username>-project`, for example `srollins-project`. You must work from this starting point, and submit your code to the same repository. More detail is available here: [Github instructions](githubinstructions.md)
+
+
 ##Submission
 Projects may be resubmitted until *mastery* is demonstrated, but beware that failure to make timely progress will likely result in a low or failing grade in the course.
 
