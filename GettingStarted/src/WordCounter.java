@@ -32,7 +32,8 @@ public class WordCounter {
 		//try (Scanner fileScanner = new Scanner(path)){
 			
 			while(fileScanner.hasNext()) {
-				System.out.println(fileScanner.next());
+				String nextToken = fileScanner.next();
+				System.out.println(nextToken);				
 				count++;
 			}
 			
