@@ -33,6 +33,20 @@ public class Friend {
 		
 	}
 
+	public String getName() {
+		return this.name;
+	}
+	
+	
+	public boolean equals(Object o) {
+		
+		Friend other = (Friend)o;
+		String othersname = other.getName();
+		
+		return (this.name.equals(othersname));
+		
+	}
+	
 	public String toString() {
 		return ("Name: " + this.name + " Login: " + this.login);
 	}
