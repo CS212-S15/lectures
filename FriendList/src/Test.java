@@ -1,29 +1,25 @@
-import java.io.IOException;
-import java.nio.file.FileSystems;
-import java.nio.file.Path;
-import java.util.Scanner;
 
 
 public class Test {
 
 	
-	public static void openFile() throws IOException {
-		//try {
-			Path path = FileSystems.getDefault().getPath("file.txt");
-			Scanner scan = new Scanner(path);
-		//} catch(IOException ioe) {
-			
-		//}
-	}
- 	
-	
 	public static void main(String[] args) {
 
-
+		FriendBook book = new FriendBook();
 		Friend f1 = null;
+		Friend f2 = null;
+		Friend f3 = null;
 		try {
-			f1 = new Friend("Sally", "sallyissocool");
-			System.out.println(f1);
+			f1 = new Friend("Sally", "sally");
+			f2 = new Friend("Bob", "bob");
+			f3 = new Friend("Herb", "herb");
+			
+			book.addFriend("sally", f2);
+			book.addFriend("sally", f3);
+			book.addFriend("herb", f1);
+			
+			System.out.println(book);
+		
 		} catch(InvalidLoginException ile) {
 			System.out.println(ile.getMessage());
 			System.out.println(f1);

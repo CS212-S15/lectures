@@ -2,7 +2,7 @@
 public class Friend {
 
 	private String name;
-	private String login;
+	private String login; 
 	
 	private static final int MINLENGTH = 3;
 	private static final int MAXLENGTH = 10;
