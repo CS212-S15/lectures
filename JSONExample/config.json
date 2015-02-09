@@ -1,0 +1,6 @@
+{
+	"inputPath": "input/simple",
+	"outputPath": "output/result.txt",
+	"digitDelimiter": false,
+	"firstArray": [1, 2, 3, 4]
+}
