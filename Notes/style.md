@@ -1,0 +1,11 @@
+Style Guidelines
+================
+
+Your code is expected to follow the guidelines below. If you do not follow these guidelines you may not qualify for code review:
+
+1. Use lower-case letters to begin a variable or method name.
+2. Use upper-case letters to begin a class name.
+3. Use camelCase not_underscores.
+4. Be consistent with spacing. `variable= new Something()` is not good. `variable = new Something()` is much better.
+5. Be consistent with your use of the `this` keyword, especially in constructors.
+6. Use try-with-resources.
