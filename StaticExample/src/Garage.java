@@ -12,8 +12,10 @@ public class Garage {
 		System.out.println(smart.getVinGenerator());
 	
 		System.out.println(Car.getVinGenerator());
+	
 		
 		
+
 	}
 
 }

@@ -13,6 +13,10 @@ public class Car {
 		this.vinNumber = ++vinGenerator;
 	}
 	
+	/**
+	 * Returns the VIN number of the car.
+	 * @return long representing VIN number
+	 */
 	public long getVinNumber() {
 		return this.vinNumber;
 	}
@@ -24,5 +28,14 @@ public class Car {
 	public String getMake() {
 		return this.make;
 	}
+
+	/**
+	 * Allows programmer to change the make of the car.
+	 * @param make - the make of the car
+	 */
+	public void setMake(String make) {
+		this.make = make;
+	}
+
 	
 }
