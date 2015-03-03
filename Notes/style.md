@@ -10,3 +10,4 @@ Your code is expected to follow the guidelines below. If you do not follow these
 5. Be consistent with your use of the `this` keyword, especially in constructors.
 6. Use try-with-resources.
 7. Document all of the methods and classes you create.
+8. Use private data members unless there is a good reason to do otherwise.
