@@ -11,3 +11,6 @@ Your code is expected to follow the guidelines below. If you do not follow these
 6. Use try-with-resources.
 7. Document all of the methods and classes you create.
 8. Use private data members unless there is a good reason to do otherwise.
+9. Make sure use proper indentation in all classes.
+10. Do not catch unchecked exceptions unless there is a very good reason. Instead, try to use conditionals appropriately to avoid unchecked (e.g., NullPointer) exceptions.
+11. Do not replicate code unless there is a very good reason.
