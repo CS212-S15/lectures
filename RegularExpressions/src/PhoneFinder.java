@@ -39,7 +39,7 @@ public class PhoneFinder {
 	}	
 
 	public static String extractHeaders(String data) {
-		
+		//TODO: demonstrate greedy versus reluctant quantifiers
 		return data.replaceFirst("(?ism)((.+?:.+?)(^\\s*$))", "");		
 
 	}
@@ -62,7 +62,8 @@ public class PhoneFinder {
 	public static void main(String[] args) throws IOException {
 		String data = readFile("customerinfo.txt");
 		data = extractHeaders(data);
-		System.out.println(getAreaCodes(data).size());
+		System.out.println(data);
+		//System.out.println(getAreaCodes(data).size());
 	}
 
 
