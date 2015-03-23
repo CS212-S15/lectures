@@ -3,7 +3,7 @@ import java.util.TreeSet;
 
 public class NameSet {
 
-	TreeSet<Name> names; 
+	private TreeSet<Name> names; 
 	
 	public NameSet() {
 		this.names = new TreeSet<>();
