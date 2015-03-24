@@ -26,17 +26,17 @@ public class Example {
 		
 		String addrs = "srollins@cs.usfca.edu, snrollins@usfca.EDU, srollins@gmail.com";
 		
-		//Pattern p = Pattern.compile(".*\\.(com|edu)"); //greedy
+		Pattern p = Pattern.compile(".*\\.(com|edu)"); //greedy
 		//Pattern p = Pattern.compile(".*?\\.(com|edu)"); //reluctant
 		//Pattern p = Pattern.compile("(?i).*?\\.(com|edu)"); //case insensitive
 		//Pattern p = Pattern.compile("(?i)(.*?)@(.*?)\\.(com|edu)"); //grouping w/ @
-		Pattern p = Pattern.compile("(?i)(^|\\s)(.*?)@(.*?)\\.(com|edu)"); //start at beginning of user
+		//Pattern p = Pattern.compile("(?i)(^|\\s)(.*?)@(.*?)\\.(com|edu)"); //start at beginning of user
 		
 		
 		int count = 0;
 		Matcher m = p.matcher(addrs);		
 		while (m.find()) {
-			System.out.println("User " + ++count + ": "  + m.group(2));
+			System.out.println("User " + ++count + ": "  + m.group());
 		}
 		
 		
