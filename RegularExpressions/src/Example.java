@@ -6,40 +6,29 @@ public class Example {
 
 	public static void tryTweet() {
 		
-		String tweet = "Everyone knows #cs212 is an #awesome class"; //at #usf
+		String tweet = "Everyone knows #cs212 is an #awesome class at #usf"; //at #usf
 		
-		Pattern p = Pattern.compile("#.*");
-		//Pattern p = Pattern.compile("#.*\\s"); //greedy
-		//Pattern p = Pattern.compile("#.*?\\s"); //reluctant
-		//Pattern p = Pattern.compile("#(.*?)\\s"); //grouping
-		//Pattern p = Pattern.compile("#(.*?)(\\s|$)"); //end of the line
-		
-		int count = 0;
+		Pattern p = Pattern.compile("#(.*?)(\\s|$)");
+				
+		int count = 0;		
 		Matcher m = p.matcher(tweet);		
 		while (m.find()) {
-			System.out.println("Tag " + ++count + ": "  + m.group());
+			System.out.println("Tag " + ++count + ": "  + m.group(1));
 		}
 		
 	}
 	
 	public static void tryEmail() {
 		
-		String addrs = "srollins@cs.usfca.edu, snrollins@usfca.EDU, srollins@gmail.com";
+		String addrs = "srollins@cs.usfca.edu, snrollins@usfca.EDU, srollins@gmail.com, rollins@samirollins.com";
 		
-		Pattern p = Pattern.compile(".*\\.(com|edu)"); //greedy
-		//Pattern p = Pattern.compile(".*?\\.(com|edu)"); //reluctant
-		//Pattern p = Pattern.compile("(?i).*?\\.(com|edu)"); //case insensitive
-		//Pattern p = Pattern.compile("(?i)(.*?)@(.*?)\\.(com|edu)"); //grouping w/ @
-		//Pattern p = Pattern.compile("(?i)(^|\\s)(.*?)@(.*?)\\.(com|edu)"); //start at beginning of user
-		
+		Pattern p = Pattern.compile("(?i)(^|\\s)(.*?)@(.*?)\\.(com|edu)");		
 		
 		int count = 0;
 		Matcher m = p.matcher(addrs);		
 		while (m.find()) {
-			System.out.println("User " + ++count + ": "  + m.group());
+			System.out.println("User " + ++count + ": "  + m.group(2));
 		}
-		
-		
 	}
 	
 	
