@@ -31,14 +31,32 @@ This is the traditional method for software development that defines a lengthy a
 
 ### Agile
 
-Many (maybe most) companies these days use some flavor of agile development. In its purest form, agile is a methodology that conforms to the [agile manifesto](http://agilemanifesto.org/). In reality, this is often implemented by using a iterative approach. A single iteration (i.e., a *sprint*) is a fairly short time period during which the team works on some new feature or functionality. There is a daily meeting to discuss plans for the day and anything that is blocking progress.  At the end of the sprint, there is a fully functional software stack.  
+Many (maybe most) companies these days use some flavor of agile development. In its purest form, agile is a methodology that conforms to the [agile manifesto](http://agilemanifesto.org/). In reality, this is often implemented by using a iterative approach. A single iteration (i.e., a *sprint*) is a fairly short time period during which the team works on some new feature or functionality. There is a daily meeting to discuss plans for the day and anything that is blocking progress.  At the end of the sprint, the goal is to have a fully functional version of the system, but perhaps without all of the necessary functionality.  
 
 
-TDD
+### Test-Driven Development
 
-Testing: black vs. whitebox
+Not to be confused with agile, TDD in its purest form proposes that tests be written first, and the code developed to in order to meet the requirements of the tests. 
 
-Unit/Integration/System
+#Testing#
+
+### Unit Testing
+
+[Unit tests](http://en.wikipedia.org/wiki/Unit_testing) examine individual components, for example methods. Many of your Project 1 tests were unit tests, calling individual methods and checking that the expected output was produced. In this strategy, knowledge of the code and logic is exploited, which means that it falls under the category of [white-box testing](http://en.wikipedia.org/wiki/White-box_testing).
+
+### Integration Testing
+
+[Integration testing](http://en.wikipedia.org/wiki/Integration_testing) also falls under the category of white-box testing. Integration tests examines how modules integrate with each other. An integration test may test parameter passing between modules, or consider a specific workflow through the application. Many of the project tests are integration tests.
+
+### System Testing
+
+[System testing](http://en.wikipedia.org/wiki/System_testing) tests the entire, end-to-end system. System testing falls under the category of [black-box testing](http://en.wikipedia.org/wiki/Black-box_testing). Black-box testing advocates testing of the system without accessing the internal compoents. In other words, the system is treated like a black box and the tests explore whether the correct outputs are produced given appropriate inputs. No knowledge of the code or logic is exploited.
+
+#Implementing Software Tests#
+
+[JUnit](http://junit.org/) is the framework we have used for automated unit and integration testing this semester, but it is certainly not the only testing framework.
+
+
 
 Writing good tests
 
