@@ -36,7 +36,7 @@ public class PhoneFinder {
 	}
 
 	public static String extractHeaders(String data) {		
-		String REGEX = "(?sm)(.+?:.+?)(^\\s*$)";
+		String REGEX = "(?sm)(.+?:.+?)+(^\\s*$)";
 		return data.replaceFirst(REGEX, "");
 	}
 	
