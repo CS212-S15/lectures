@@ -31,12 +31,30 @@ public class Example {
 		}
 	}
 	
+	public static void tryParensExample() {
+		
+		String addrs = "abababaacababaac";
+		
+		Pattern p = Pattern.compile("((ab)+?(aac))");		
+		
+		int count = 0;
+		Matcher m = p.matcher(addrs);		
+		while (m.find()) {
+			System.out.println(m.group(2));
+		}
+	}
 	
 	public static void main(String[] args) {
 		
 		//tryTweet();
-		tryEmail();		
+		//tryEmail();
+		tryParensExample();
+		
+	
+	
+	
 	}
+	
 	
 	
 }
