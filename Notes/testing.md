@@ -54,11 +54,59 @@ Not to be confused with agile, TDD in its purest form proposes that tests be wri
 
 #Implementing Software Tests#
 
-[JUnit](http://junit.org/) is the framework we have used for automated unit and integration testing this semester, but it is certainly not the only testing framework.
+[JUnit](http://junit.org/) is the framework we have used for automated unit and integration testing this semester, but it is certainly not the only testing framework. There is a lot of good information available on the [JUnit FAQ](https://github.com/junit-team/junit/wiki/FAQ).
+
+### JUnit Mechanics
+
+JUnit is integrated into Eclipse, however to use JUnit outside of Eclipse you can download [from here](http://junit.org/).
+
+To create a new set of tests in Eclipse, right-click and select ```New > JUnit Test Case```.
+
+The wizard will remind you that JUnit must be in your build path, however you may manually add it in the ```Configure Build Path``` menu by selecting ```Libraries > JUnit```.
+
+### JUnit API
+
+The [javadoc](http://junit.org/javadoc/latest/index.html) is a helpful resource. 
+
+**Annotations** are specified for methods in a JUnit test class. 
+
+- ```@Before``` - indicates a method to be executed before every test. This method may contain *setup* code that is common for all methods, for example may instantiate a data structure.
+- ```@After``` - indicates a method to be executed after every test. This method may contain teardown code common for all methods, for example may close a file stream.
+- ```@Test``` - indicates a single test. Older versions of JUnit required every test method to have a name beginning with ```test```, however this is no longer necessary.
+- ```@BeforeClass``` and ```@AfterClass``` - indicate methods executed once before all tests in the class and after all tests in the class respectively.
+
+In addition, test annotations may specify a timeout, after which the test will fail, as well as an exception expected by the test where appropriate.
+
+***Assertion*** methods are used in each test to determine whether the conditions tested are met. These methods evaluate some condition, and may optionally take as input a message to be displayed in case the test fails. The assertion methods include the following: 
+
+- ```assertTrue```
+- ```assertNull```
+- ```assertSame```
+- ```assertEquals```
+- ```assertFalse```
+- ```assertNotNull```
+- ```assertNotSame```
+- ```assertArrayEquals```
+
+### Writing Good Tests
+
+Of course, arguably the most challenging element of testing is writing good tests. Writing good tests takes practice, but following a few guidelines to consider:
+
+- **Test one thing per test** - A good unit test will test one condition. If it fails, you should be able to identify the very specific case that needs to be address.
+- **Tests should be small** - A test should be small --- very few lines of code.
+- **Test should be automated and repeatable** - Running tests should be easy and tests should be rerun anytime the code changes.
+- **Tests should be intuitive** - It should be easy for another developer to understand the test.
+- **Start with the easy cases** - Begin with tests that assume valid input.
+- **Test corner cases** - This includes null values and input out of bounds.
 
 
+**References**
 
-Writing good tests
+- [http://www.christiaanverwijs.nl/post/2012/10/17/How-writing-Unit-Tests-force-you-to-write-Good-Code-And-6-bad-arguments-why-you-shouldnt.aspx](http://www.christiaanverwijs.nl/post/2012/10/17/How-writing-Unit-Tests-force-you-to-write-Good-Code-And-6-bad-arguments-why-you-shouldnt.aspx)
+- [http://programmers.stackexchange.com/questions/21133/how-to-write-good-unit-tests](http://programmers.stackexchange.com/questions/21133/how-to-write-good-unit-tests)
 
+### Other Notes
 
+Often, the number of lines of test code will exceed the number of lines of code being tested. In some cases, you may see 5x more test code than non-test code. 
 
+Writing tests helps to enforce better design. If you have a hard time writing good test cases, you may want to rethink your original code.
