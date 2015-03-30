@@ -37,7 +37,7 @@ public class JUnitBasicsExample {
 		System.out.println("Test1 code");
 		
 		int a = 1, b = 1;		
-		assertTrue("a and b expected to be eaual but are not.", (a==b));
+		assertTrue("a and b expected to be equal but are not.", (a==b));
 	}
 
 	@Test
@@ -45,7 +45,7 @@ public class JUnitBasicsExample {
 		System.out.println("Test2 code");
 
 		int a = 1, b = 2;		
-		assertTrue("a and b expected to be eaual but are not.", (a==b));
+		assertTrue("a and b expected to be equal but are not.", (a==b));
 
 	}
 

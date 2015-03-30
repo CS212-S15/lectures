@@ -1,6 +1,6 @@
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+
+import java.io.IOException;
 
 import org.junit.Test;
 
@@ -13,10 +13,26 @@ import org.junit.Test;
  * @see EmailParser
  * @see EmailParserTest
  */
+//Thanks to Sophie Engle for this example.
 public class EmailParserTest {
 	/*
-	 * The following tests focus on a simple email, sjengle@usfca.edu,
+	 * The following tests focus on a simple email, snrollins@usfca.edu,
 	 * and make sure parsing works.
 	 */
+	
+	@Test(timeout=60000)
+	public void testSimpleIsValid() {
+		EmailParser parser = new EmailParser("snrollins@usfca.edu");
+		assertTrue(parser.debug(), parser.isValid());
+	}
+	
+//	@Test
+//	public void testSimpleIsValid() {
+//		EmailParser parser = new EmailParser("snrollins@usfca.edu");
+//
+//	}
+	
+	
+	
 
 }

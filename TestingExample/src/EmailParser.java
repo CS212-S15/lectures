@@ -50,7 +50,7 @@ public class EmailParser {
 		String regex = null;
 
 //		regex = "(.+)@(.+\\.(.+))";
-		regex = "([^@]*)@([^@]*\\.([^@]*))";
+//		regex = "([^@]*)@([^@]*\\.([^@]*))";
 		regex = "^([^@]+)@([^@]+\\.([^.@]+))$";
 
 		Pattern p = Pattern.compile(regex);
