@@ -26,11 +26,14 @@ public class HeaderMatcher {
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(data);
 		System.out.println("Regular expression: " + regex);
-		int count = 1;
+		int match = 1;
 		while(m.find()) {
+			int count = 1;
 			for(int i = 0; i < m.groupCount(); i++) {
-				System.out.println("Group " + count++ + ":\n" + m.group(i));
+				System.out.println("Match " + match + " - Group " + count++ + ":\n" + m.group(i));
 			}
+			match++;
+			System.out.println();
 		}
 		System.out.println("\n============\n");
 	}
@@ -64,12 +67,12 @@ public class HeaderMatcher {
 		//print out matches for one or more chars, followed by : followed by one or more chars
 		//followed by a blank line
 		//use DOTALL mode and reluctant quantifier and MULTILINE mode
-		printMatches(data, "(?sm)(.+?:.+?)(^\\s*$)");
+		printMatches(data, "(?sm)(.+?:.+?)^\\s*$");
 		
 		//print out matches for one or more chars, followed by : followed by one or more chars
 		//followed by a blank line
 		//use DOTALL mode and reluctant quantifier and MULTILINE mode
-		printMatches(data, "(?sm)((.+?:.+?)+?)(^\\s*$)");
+		printMatches(data, "(?sm)((.+?:.+?)+?)^\\s*$");
 				
 	}
 	
