@@ -1,0 +1,9 @@
+{
+	"inputPath": "input/simple",
+	"outputPath": "output/result.txt",
+	"digitDelimiter": false,
+	"firstArray": [1, 2, 3, 4],
+	"myObject": {
+		"myArray": [1, 2, 3]
+	}
+}
