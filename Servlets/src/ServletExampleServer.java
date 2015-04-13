@@ -32,6 +32,7 @@ public class ServletExampleServer {
         // through a web.xml @WebServlet annotation, or anything similar.
         handler.addServletWithMapping(HelloServlet.class, "/hello");
         handler.addServletWithMapping(GoodbyeServlet.class, "/goodbye");
+        handler.addServletWithMapping(EchoServlet.class, "/echo");
  
         // Start things up!
         server.start();

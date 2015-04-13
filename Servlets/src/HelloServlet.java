@@ -14,10 +14,12 @@ public class HelloServlet extends HttpServlet {
         response.setStatus(HttpServletResponse.SC_OK);
 		
 		PrintWriter out = response.getWriter();
+
 		String name = request.getParameter("name");
 		if(name == null) {
 			name = "anonymous";
 		}		
+		
 		out.println("<html><title>HelloServlet</title><body>Hello, " + name + "!<br/>Thanks for visiting</body></html>");
 		
 	}
