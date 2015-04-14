@@ -13,12 +13,11 @@ public class LoginServlet extends BaseServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{
-		/*//if user is logged in, redirect
+		//if user is logged in, redirect
 		if(getName(request) != null) {
 			response.sendRedirect(response.encodeRedirectURL("/addscores"));
 			return;
 		}
-		*/
 		
 		System.out.println(request.getRequestURI());
 		
