@@ -12,7 +12,12 @@ import javax.servlet.http.HttpServletResponse;
  * Provides general helper methods.
  */
 public class BaseServlet extends HttpServlet {
-	
+
+	public static final String VISIT_COUNT = "visits";
+	public static final String USER_INFO = "userInfo";
+	public static final String ALL_VISITS = "allVisits";
+	public static final String SHARED_DATA = "sharedData";
+
 	/*
 	 * Return the beginning part of the HTML page.
 	 */

@@ -8,6 +8,7 @@ public class SessionExampleServer {
 		
         Server server = new Server(8080);
  
+        //Use ServletContextHandler in order to maintain sessions
         ServletContextHandler handler = new ServletContextHandler(ServletContextHandler.SESSIONS);        
         server.setHandler(handler);
  

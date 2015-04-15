@@ -9,11 +9,6 @@ import org.eclipse.jetty.servlet.ServletContextHandler;
 
 public class ContextExampleServer {
 
-	public static final String VISIT_COUNT = "visits";
-	public static final String USER_INFO = "userInfo";
-	public static final String ALL_VISITS = "allVisits";
-	public static final String SHARED_DATA = "sharedData";
-
 	public static void main(String[] args) throws Exception {
 		
         Server server = new Server(8080);
@@ -31,7 +26,7 @@ public class ContextExampleServer {
 
 			@Override
 			public void contextInitialized(ServletContextEvent sce) {
-				sce.getServletContext().setAttribute(ALL_VISITS, 0);
+				sce.getServletContext().setAttribute(BaseServlet.ALL_VISITS, 0);
 			}
         	
         });

@@ -9,10 +9,6 @@ import javax.servlet.http.HttpSession;
 
 public class SessionVisitCountServlet extends BaseServlet {
 
-	public static final String VISIT_COUNT = "visits";
-	public static final String USER_INFO = "userInfo";
-
-	
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {			
 		
 		HttpSession session = request.getSession();
@@ -31,11 +27,12 @@ public class SessionVisitCountServlet extends BaseServlet {
 			body = "<p>This is visit number " + visitCount + "!</p>";
 		}
 		
+		//store the updated value in the map
 		value.put(VISIT_COUNT, String.valueOf(visitCount));
-		
-		PrintWriter out = prepareResponse(response);
+		//put the updated map into the session
 		session.setAttribute(USER_INFO, value);
 		
+		PrintWriter out = prepareResponse(response);		
 		out.println(header("VisitCount"));		
 		out.println(body);		
 		out.println(footer());

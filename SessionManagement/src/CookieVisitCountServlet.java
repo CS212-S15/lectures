@@ -7,8 +7,6 @@ import javax.servlet.http.HttpSession;
 
 
 public class CookieVisitCountServlet extends BaseServlet {
-
-	public static final String VISIT_COUNT = "visits";
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {			
 		
