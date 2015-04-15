@@ -21,9 +21,21 @@ public class ContextExampleServer {
         ServletContextHandler handler = new ServletContextHandler(ServletContextHandler.SESSIONS);        
         server.setHandler(handler);
 
-        HashMap<String, String> sharedDataMap = new HashMap<String, String>();
-        sharedDataMap.put(ALL_VISITS, String.valueOf(0));
-        handler.setAttribute(SHARED_DATA, sharedDataMap);
+        handler.addEventListener(new ServletContextListener() {
+
+			@Override
+			public void contextDestroyed(ServletContextEvent sce) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void contextInitialized(ServletContextEvent sce) {
+				sce.getServletContext().setAttribute(ALL_VISITS, 0);
+			}
+        	
+        });
+        
         
         handler.addServlet(ContextVisitCountServlet.class, "/contextvisit");
                 

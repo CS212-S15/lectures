@@ -15,10 +15,10 @@ public class ContextVisitCountServlet extends BaseServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {			
 		
 		ServletContext context = getServletConfig().getServletContext();		
-		HashMap<String, String> sharedDataMap = (HashMap<String, String>) context.getAttribute(ContextExampleServer.SHARED_DATA);
-		int allVisits = Integer.parseInt(sharedDataMap.get(ContextExampleServer.ALL_VISITS));
+
+		int allVisits = (int)context.getAttribute(ContextExampleServer.ALL_VISITS);
 		allVisits += 1;
-		sharedDataMap.put(ContextExampleServer.ALL_VISITS, String.valueOf(allVisits));
+		context.setAttribute(ContextExampleServer.ALL_VISITS, allVisits);
 		
 		HttpSession session = request.getSession();
 		int visitCount;
