@@ -30,21 +30,29 @@ public class CalculateAverageServlet extends BaseServlet {
 		}
 		
 		//if the user is not logged in, redirect to login page
-		if(!d.contains(name)) {
+		if(name == null) {
 			response.sendRedirect(response.encodeRedirectURL("/login"));
 			return;
-		}
+		} 	
+
+		String body = null;
 		//if the user entered a last score, add it to the data set
-		if(score > 0) {
+		if(containsscore) {
 			d.add(name, score);
+		} 
+		
+		if(!d.contains(name)) { //true if no values have been entered			
+			body = "<h1>You haven't entered any values!</h1>";
+		} else {
+			double result = d.average(name);			
+			body = "<h1>Your average is: " + result + "</h1>";
 		}
 		
 		//get the average of all values
-		double result = d.average(name);
 		//output result
 		PrintWriter p = prepareResp(response);
 		p.println(header("Average"));
-		p.println("<h1>Your average is: " + result + "</h1>");
+		p.println(body);
 		p.println(footer());
 		
 		
