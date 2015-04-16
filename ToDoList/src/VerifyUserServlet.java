@@ -29,15 +29,8 @@ public class VerifyUserServlet extends BaseServlet {
 			return;
 		}
 		
-		//use java util UUID class to create a random unique id for this user's session.
-		UUID id = java.util.UUID.randomUUID();
-
-		//set cookie
-		response.addCookie(new Cookie(UUID, id.toString()));
-		response.setStatus(HttpServletResponse.SC_OK);
-		
 		HttpSession session = request.getSession();
-		session.setAttribute(id.toString(), name);
+		session.setAttribute(NAME, name);
 		
 		//OPTION 2: Store volatile data in a single, shared object that is stored in the servlet context and
 		//can therefore be accessed by all users/sessions/servlets.

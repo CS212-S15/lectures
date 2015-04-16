@@ -23,13 +23,12 @@ public class ListServlet extends BaseServlet {
 	private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		Data data = (Data) getServletConfig().getServletContext().getAttribute(DATA);
-		String id = getCookieValue(request, UUID);
 		
 		HttpSession session = request.getSession();
-		String name = (String) session.getAttribute(id);
+		String name = (String) session.getAttribute(NAME);
 		
 		//user is not logged in, redirect to login page
-		if(id == null || name == null || !data.userExists(name)) {
+		if(name == null || !data.userExists(name)) {
 			response.sendRedirect(response.encodeRedirectURL("/login?" + STATUS + "=" + NOT_LOGGED_IN));
 			return;
 		}
