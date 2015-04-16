@@ -14,11 +14,10 @@ public class LoginServlet extends BaseServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{		
 		DataSingleton data = DataSingleton.getInstance(); //valid for Singleton implementation
-		String id = getCookieValue(request, UUID);
 		HttpSession session = request.getSession();
 		
 		//if user is logged in, redirect
-		if(id != null && session.getAttribute(id) != null) {
+		if(session.getAttribute(NAME) != null) {
 			response.sendRedirect(response.encodeRedirectURL("/list"));
 			return;
 		}
