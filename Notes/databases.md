@@ -92,7 +92,7 @@ mysql> create table contacts(
     -> email VARCHAR(100) not null primary key,
     -> startdate DATE
     -> );
-    Query OK, 0 rows affected (0.08 sec)
+    Query OK, 0 rows affected (0.08 sec)
 
 mysql> show tables; 
 
@@ -100,7 +100,7 @@ mysql> show tables;
 | Tables_in_user01 |
 +------------------+
 | contacts         |
-+------------------+
++------------------+
 1 row in set (0.00 sec)
 ```
 
@@ -117,14 +117,14 @@ Data types include the following:
 ### Basic insertion/selection
 
 ```
-mysql> insert into contacts (name, extension, email, startdate) values ("Sami", 2024, "srollins", "2006-09-01");
-Query OK, 1 row affected (0.00 sec)
-mysql> select * from contacts;
-+------+-----------+----------+------------+
-| name | extension | email    | startdate  |
-+------+-----------+----------+------------+
-| Sami |      2024 | srollins | 2006-09-01 | 
-+------+-----------+----------+------------+
+mysql> insert into contacts (name, extension, email, startdate) values ("Sami", 2024, "srollins", "2006-09-01");
+Query OK, 1 row affected (0.00 sec)
+mysql> select * from contacts;
++------+-----------+----------+------------+
+| name | extension | email    | startdate  |
++------+-----------+----------+------------+
+| Sami |      2024 | srollins | 2006-09-01 |
++------+-----------+----------+------------+
 1 row in set (0.00 sec)
 ```
 ```
