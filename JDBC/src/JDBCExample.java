@@ -26,25 +26,31 @@ public class JDBCExample {
 		Connection con = DriverManager.getConnection(urlString,
 				username,
 				password);
+		
+		//create a statement object
 		Statement stmt = con.createStatement();
+		
+		//execute a query, which returns a ResultSet object
 		ResultSet result = stmt.executeQuery (
 				"SELECT * " + 
 				"FROM customers;");
 
-
-		while ( result.next() ) {
+		//iterate over the ResultSet
+		while (result.next()) {
+			//for each result, get the value of the column name
 			String res = result.getString("name");
 			System.out.println(res);
 		}
 
+		//reuse the statement to insert a new value into the table
 		stmt.executeUpdate("INSERT INTO customers (name) VALUES (\"Bob\")");
 		System.out.println("***");
+		
+		//print the updated table
 		result = stmt.executeQuery (
 				"SELECT * " + 
 				"FROM customers;");
-
-
-		while ( result.next() ) {
+		while (result.next()) {
 			String res = result.getString("name");
 			System.out.println(res);
 		}
